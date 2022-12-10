@@ -1,15 +1,16 @@
 :root {
   --branding-color: #f6ac4e;
+  --background-color: #e7f2f1;
   --text-color: #3e3b2d;
   --secondary-color: #dc8484;
   --heading-font-family: "Zilla Slab", serif;
   --default-font-family: "Rajdhani", sans-serif;
 }
+
 body {
   font-family: var(--default-font-family);
   color: var(--text-color);
 }
-
 h1 {
   font-family: var(--heading-font-family);
   font-size: 150px;
@@ -25,6 +26,7 @@ p {
 img {
   border-radius: 20px;
 }
+
 footer {
   background-color: var(--branding-color);
   padding: 100px 0;
@@ -54,11 +56,12 @@ footer a {
 footer a:hover {
   color: var(--text-color);
 }
+
 .featured-projects {
   font-weight: bold;
 }
 .projects {
-  background-color: #e7f2f1;
+  background-color: var(--background-color);
 }
 .projects p {
   font-weight: 400;
@@ -91,11 +94,11 @@ footer a:hover {
   margin: 0;
   line-height: 80px;
 }
-
 .hero h2 {
   font-family: var(--default-font-family);
   font-size: 36px;
   margin-top: 40px;
+  font-weight: bold;
 }
 .hero a {
   font-family: var(--heading-font-family);
@@ -105,6 +108,43 @@ footer a:hover {
   transition: all 200ms ease-in-out;
 }
 .hero a:hover {
+  font-family: "Zilla Slab Highlight", cursive;
+}
+
+.about-section {
+  background-color: var(--background-color);
+  padding: 160px 20px;
+}
+.about-section h1 {
+  font-size: 120px;
+}
+.about-section h2 {
+  font-family: var(--default-font-family);
+  font-size: 36px;
+  margin: 40px 0;
+  font-weight: bold;
+}
+.about-section p {
+  font-family: var(--default-font-family);
+  font-size: 76px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 80px;
+}
+.about-section .about-text {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.about-section a {
+  font-family: var(--heading-font-family);
+  font-size: 25px;
+  margin-top: 40px;
+  color: var(--text-color);
+  transition: all 200ms ease-in-out;
+}
+.about-section a:hover {
   font-family: "Zilla Slab Highlight", cursive;
 }
 
@@ -137,6 +177,31 @@ footer a:hover {
   }
   .hero a {
     font-size: 18px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  .about-section h1 {
+    font-size: 80px;
+  }
+  .about-section h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  .about-section p {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .about-section .about-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .about-section a {
+    font-size: 18px;
+  }
+  .about-section img {
+    margin-top: 20px;
   }
 }
 @media (max-width: 480px) {
