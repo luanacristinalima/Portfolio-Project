@@ -57,31 +57,6 @@ footer a:hover {
   color: var(--text-color);
 }
 
-.featured-projects {
-  font-weight: bold;
-}
-.projects {
-  background-color: var(--background-color);
-}
-.projects p {
-  font-weight: 400;
-  font-size: 18px;
-}
-.projects a {
-  color: var(--secondary-color);
-  transition: all 200ms ease-in-out;
-  font-size: 18px;
-}
-.projects a:hover {
-  font-family: "Zilla Slab Highlight", cursive;
-}
-.projects .icons {
-  color: var(--secondary-color);
-}
-.projects h2 .icons {
-  font-size: 34px;
-}
-
 .hero {
   background-color: var(--branding-color);
   text-align: center;
@@ -111,41 +86,70 @@ footer a:hover {
   font-family: "Zilla Slab Highlight", cursive;
 }
 
-.about-section {
+.content {
   background-color: var(--background-color);
   padding: 160px 20px;
 }
-.about-section h1 {
+.content h1 {
   font-size: 120px;
 }
-.about-section h2 {
+.content h2 {
   font-family: var(--default-font-family);
   font-size: 36px;
   margin: 40px 0;
   font-weight: bold;
 }
-.about-section p {
+.content p {
   font-family: var(--default-font-family);
   font-size: 76px;
   font-weight: 700;
   margin: 0;
   line-height: 80px;
 }
-.about-section .about-text {
+.content .about-text {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 400;
   margin-bottom: 40px;
 }
-.about-section a {
+.content a {
   font-family: var(--heading-font-family);
   font-size: 25px;
   margin-top: 40px;
   color: var(--text-color);
   transition: all 200ms ease-in-out;
 }
-.about-section a:hover {
+.content a:hover {
   font-family: "Zilla Slab Highlight", cursive;
+}
+
+.featured-projects {
+  font-weight: bold;
+}
+.projects {
+  background-color: var(--background-color);
+}
+.projects p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.projects h2 {
+  font-family: var(--heading-font-family);
+}
+.projects a {
+  color: var(--secondary-color);
+  transition: all 200ms ease-in-out;
+  font-size: 18px;
+}
+.projects a:hover {
+  font-family: "Zilla Slab Highlight", cursive;
+}
+.projects .icons {
+  color: var(--secondary-color);
+}
+.projects h2 .icons {
+  font-size: 34px;
 }
 
 @media (max-width: 768px) {
@@ -178,30 +182,36 @@ footer a:hover {
   .hero a {
     font-size: 18px;
   }
-  .about-section {
+  .content {
     text-align: center;
     padding: 80px 20px;
   }
-  .about-section h1 {
+  .content h1 {
     font-size: 80px;
   }
-  .about-section h2 {
+  .content h2 {
     font-size: 24px;
     margin: 20px 0;
   }
-  .about-section p {
+  .content p {
     font-size: 48px;
     line-height: 60px;
   }
-  .about-section .about-text {
+  .content .about-text {
     font-size: 18px;
     margin-bottom: 20px;
   }
-  .about-section a {
+  .content a {
     font-size: 18px;
   }
-  .about-section img {
+  .content img {
     margin-top: 20px;
+  }
+  .projects p {
+    font-size: 24px;
+  }
+  .projects h2 {
+    font-size: 36px;
   }
 }
 @media (max-width: 480px) {
