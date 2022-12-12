@@ -122,6 +122,18 @@ footer a:hover {
 .content a:hover {
   font-family: "Zilla Slab Highlight", cursive;
 }
+.content .email {
+  text-decoration: none;
+  font-family: var(--default-font-family);
+}
+.content .email:hover {
+  font-family: var(--default-font-family);
+}
+.content .social {
+  font-size: 36px;
+  padding-right: 15px;
+  text-decoration: none;
+}
 
 .featured-projects {
   font-weight: bold;
