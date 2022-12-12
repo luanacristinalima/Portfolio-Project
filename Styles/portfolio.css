@@ -2,7 +2,7 @@
   --branding-color: #f6ac4e;
   --background-color: #e7f2f1;
   --text-color: #3e3b2d;
-  --secondary-color: #dc8484;
+  --secondary-color: #48abb2;
   --heading-font-family: "Zilla Slab", serif;
   --default-font-family: "Rajdhani", sans-serif;
 }
@@ -44,10 +44,6 @@ footer p {
   font-size: 18px;
   margin: 0;
 }
-footer i {
-  font-size: 36px;
-  padding-right: 15px;
-}
 footer a {
   color: var(--text-color);
   text-decoration: none;
@@ -56,11 +52,16 @@ footer a {
 footer a:hover {
   color: var(--text-color);
 }
+.social-links {
+  font-size: 36px;
+  padding-right: 15px;
+  text-decoration: none;
+}
 
 .hero {
   background-color: var(--branding-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 200px 20px;
 }
 .hero p {
   font-family: var(--default-font-family);
@@ -88,7 +89,7 @@ footer a:hover {
 
 .content {
   background-color: var(--background-color);
-  padding: 160px 20px;
+  padding: 200px 20px;
 }
 .content h1 {
   font-size: 120px;
@@ -129,10 +130,11 @@ footer a:hover {
 .content .email:hover {
   font-family: var(--default-font-family);
 }
-.content .social {
+.content .social-links {
   font-size: 36px;
-  padding-right: 15px;
-  text-decoration: none;
+}
+.content .social-links:hover {
+  font-family: var(--default-font-family);
 }
 
 .featured-projects {
@@ -153,6 +155,7 @@ footer a:hover {
   color: var(--secondary-color);
   transition: all 200ms ease-in-out;
   font-size: 18px;
+  font-family: var(--heading-font-family);
 }
 .projects a:hover {
   font-family: "Zilla Slab Highlight", cursive;
@@ -168,7 +171,8 @@ footer a:hover {
   font-family: var(--heading-font-family);
   font-size: 36px;
 }
-nav {
+.nav-bar {
+  background-color: var(--branding-color);
   padding: 20px 0;
 }
 nav li {
