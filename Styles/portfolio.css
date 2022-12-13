@@ -33,12 +33,6 @@ footer {
 footer h2 {
   margin-bottom: 60px;
 }
-footer .contact {
-  font-family: var(--heading-font-family);
-  font-size: 30px;
-  text-decoration: underline;
-  margin: 0;
-}
 footer p,
 footer a {
   font-size: 18px;
@@ -54,12 +48,20 @@ footer a:hover {
   color: var(--secondary-color);
   text-decoration: underline;
 }
-.social-links {
+.social-links,
+.content .social-links {
   font-size: 36px;
   padding-right: 15px;
 }
 .social-links:hover {
   text-decoration: none;
+}
+
+.contact {
+  font-family: var(--heading-font-family);
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 0;
 }
 
 .hero {
@@ -135,15 +137,16 @@ footer a:hover {
 .content .email {
   text-decoration: none;
   font-family: var(--default-font-family);
+  transition: all 200ms ease-in-out;
 }
 .content .email:hover {
   font-family: var(--default-font-family);
-}
-.content .social-links {
-  font-size: 36px;
+  text-decoration: underline;
+  color: var(--secondary-color);
 }
 .content .social-links:hover {
-  font-family: var(--default-font-family);
+  font-family: var(--heading-font-family);
+  color: var(--secondary-color);
 }
 
 .featured-projects {
