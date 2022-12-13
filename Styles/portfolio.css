@@ -1,27 +1,25 @@
 :root {
-  --branding-color: #f6ac4e;
-  --background-color: #e7f2f1;
-  --text-color: #3e3b2d;
-  --secondary-color: #48abb2;
+  --branding-color: #fcd785;
+  --background-color: #f8d3e0;
+  --text-color: #bc5454;
+  --secundary-text-color: #4153a5;
+  --secondary-color: #341918;
   --heading-font-family: "Zilla Slab", serif;
   --default-font-family: "Rajdhani", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
-  color: var(--text-color);
+  color: var(--secundary-text-color);
 }
 h1 {
   font-family: var(--heading-font-family);
-  font-size: 150px;
+  font-size: 120px;
   line-height: 100px;
 }
 h2 {
   font-family: var(--heading-font-family);
   font-size: 48px;
-}
-p {
-  font-size: 24px;
 }
 img {
   border-radius: 20px;
@@ -30,6 +28,7 @@ img {
 footer {
   background-color: var(--branding-color);
   padding: 100px 0;
+  color: var(--text-color);
 }
 footer h2 {
   margin-bottom: 60px;
@@ -40,29 +39,34 @@ footer .contact {
   text-decoration: underline;
   margin: 0;
 }
-footer p {
+footer p,
+footer a {
   font-size: 18px;
   margin: 0;
 }
-footer a {
+footer a,
+.social-links {
   color: var(--text-color);
   text-decoration: none;
-  font-size: 18px;
+  transition: all 200ms ease-in-out;
 }
 footer a:hover {
-  color: var(--text-color);
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 .social-links {
   font-size: 36px;
   padding-right: 15px;
+}
+.social-links:hover {
   text-decoration: none;
 }
 
 .hero {
   background-color: var(--branding-color);
-  text-align: center;
-  padding: 200px 20px;
+  color: var(--text-color);
+  padding: 200px 20px 0;
+  max-height: 739px;
 }
 .hero p {
   font-family: var(--default-font-family);
@@ -74,7 +78,7 @@ footer a:hover {
 .hero h2 {
   font-family: var(--default-font-family);
   font-size: 36px;
-  margin-top: 40px;
+  margin-top: 20px;
   font-weight: bold;
 }
 .hero a {
@@ -86,6 +90,10 @@ footer a:hover {
 }
 .hero a:hover {
   font-family: "Zilla Slab Highlight", cursive;
+}
+.hero .img-hero {
+  position: relative;
+  top: -120px;
 }
 
 .content {
@@ -140,29 +148,31 @@ footer a:hover {
 
 .featured-projects {
   font-weight: bold;
+  font-size: 36px;
+  color: var(--text-color);
 }
 .projects {
   background-color: var(--background-color);
 }
 .projects p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.5;
 }
 .projects h2 {
   font-family: var(--heading-font-family);
 }
 .projects a {
-  color: var(--secondary-color);
+  color: var(--text-color);
   transition: all 200ms ease-in-out;
-  font-size: 18px;
+  font-size: 24px;
   font-family: var(--heading-font-family);
 }
 .projects a:hover {
   font-family: "Zilla Slab Highlight", cursive;
 }
 .projects .icons {
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 .projects h2 .icons {
   font-size: 34px;
@@ -201,7 +211,12 @@ nav a:hover,
 nav li.active a {
   color: var(--secondary-color);
 }
-
+@media (max-width: 992px) {
+  .hero {
+    text-align: center;
+    padding: 150px 20px;
+  }
+}
 @media (max-width: 768px) {
   h1 {
     font-size: 100px;
@@ -230,7 +245,7 @@ nav li.active a {
     font-size: 24px;
   }
   .hero a {
-    font-size: 18px;
+    font-size: 20px;
   }
   .content {
     text-align: center;
@@ -253,9 +268,6 @@ nav li.active a {
   }
   .content a {
     font-size: 18px;
-  }
-  .content img {
-    margin-top: 20px;
   }
   .projects p {
     font-size: 24px;
