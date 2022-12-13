@@ -126,7 +126,7 @@ footer a:hover {
   font-family: var(--heading-font-family);
   font-size: 25px;
   margin-top: 40px;
-  color: var(--text-color);
+  color: var(--secundary-text-color);
   transition: all 200ms ease-in-out;
 }
 .content a:hover {
