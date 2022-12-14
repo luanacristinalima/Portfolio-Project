@@ -12,13 +12,15 @@ body {
   font-family: var(--default-font-family);
   color: var(--secundary-text-color);
 }
-h1 {
+h1,
+h2 {
   font-family: var(--heading-font-family);
+}
+h1 {
   font-size: 120px;
   line-height: 100px;
 }
 h2 {
-  font-family: var(--heading-font-family);
   font-size: 48px;
 }
 img {
@@ -44,9 +46,11 @@ footer a,
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
-footer a:hover {
+footer a:hover,
+.content .email:hover {
   color: var(--secondary-color);
   text-decoration: underline;
+  font-family: var(--default-font-family);
 }
 .social-links,
 .content .social-links {
@@ -56,12 +60,20 @@ footer a:hover {
 .social-links:hover {
   text-decoration: none;
 }
-
 .contact {
   font-family: var(--heading-font-family);
   font-size: 30px;
   text-decoration: underline;
   margin: 0;
+}
+.content .email {
+  text-decoration: none;
+  font-family: var(--default-font-family);
+  transition: all 200ms ease-in-out;
+}
+.content .social-links:hover {
+  font-family: var(--heading-font-family);
+  color: var(--secondary-color);
 }
 
 .hero {
@@ -70,83 +82,55 @@ footer a:hover {
   padding: 200px 20px 0;
   max-height: 739px;
 }
-.hero p {
+.content {
+  background-color: var(--background-color);
+  padding: 200px 20px;
+}
+.hero p,
+.hero h2,
+.content h2,
+.content p {
   font-family: var(--default-font-family);
+}
+.hero p,
+.content p {
   font-size: 76px;
   font-weight: 700;
   margin: 0;
   line-height: 80px;
 }
-.hero h2 {
-  font-family: var(--default-font-family);
+.hero h2,
+.content h2 {
   font-size: 36px;
   margin-top: 20px;
   font-weight: bold;
 }
-.hero a {
+.hero a,
+.content a {
   font-family: var(--heading-font-family);
   font-size: 25px;
   margin-top: 40px;
-  color: var(--text-color);
   transition: all 200ms ease-in-out;
 }
-.hero a:hover {
+.hero a {
+  color: var(--text-color);
+}
+.content a {
+  color: var(--secundary-text-color);
+}
+.hero a:hover,
+.content a:hover {
   font-family: "Zilla Slab Highlight", cursive;
 }
 .hero .img-hero {
   position: relative;
   top: -120px;
 }
-
-.content {
-  background-color: var(--background-color);
-  padding: 200px 20px;
-}
-.content h1 {
-  font-size: 120px;
-}
-.content h2 {
-  font-family: var(--default-font-family);
-  font-size: 36px;
-  margin: 40px 0;
-  font-weight: bold;
-}
-.content p {
-  font-family: var(--default-font-family);
-  font-size: 76px;
-  font-weight: 700;
-  margin: 0;
-  line-height: 80px;
-}
-.content .about-text {
+.content .about-text,
+.projects p {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 400;
-  margin-bottom: 40px;
-}
-.content a {
-  font-family: var(--heading-font-family);
-  font-size: 25px;
-  margin-top: 40px;
-  color: var(--secundary-text-color);
-  transition: all 200ms ease-in-out;
-}
-.content a:hover {
-  font-family: "Zilla Slab Highlight", cursive;
-}
-.content .email {
-  text-decoration: none;
-  font-family: var(--default-font-family);
-  transition: all 200ms ease-in-out;
-}
-.content .email:hover {
-  font-family: var(--default-font-family);
-  text-decoration: underline;
-  color: var(--secondary-color);
-}
-.content .social-links:hover {
-  font-family: var(--heading-font-family);
-  color: var(--secondary-color);
 }
 
 .featured-projects {
@@ -156,11 +140,6 @@ footer a:hover {
 }
 .projects {
   background-color: var(--background-color);
-}
-.projects p {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.5;
 }
 .projects h2 {
   font-family: var(--heading-font-family);
@@ -284,14 +263,15 @@ nav h3 a:hover {
   .mt-4 {
     margin-top: 15px !important;
   }
-  .hero p {
+  .hero p,
+  .content p {
     font-size: 48px;
     line-height: 60px;
   }
-  .hero h2 {
-    font-size: 24px;
-  }
-  .projects h2 .icons {
+  .hero h2,
+  .projects h2 .icons,
+  .content h2,
+  .projects p {
     font-size: 24px;
   }
   .hero a {
@@ -305,12 +285,7 @@ nav h3 a:hover {
     font-size: 80px;
   }
   .content h2 {
-    font-size: 24px;
     margin: 20px 0;
-  }
-  .content p {
-    font-size: 48px;
-    line-height: 60px;
   }
   .content .about-text {
     font-size: 18px;
@@ -318,9 +293,6 @@ nav h3 a:hover {
   }
   .content a {
     font-size: 18px;
-  }
-  .projects p {
-    font-size: 24px;
   }
   .projects h2 {
     font-size: 36px;
